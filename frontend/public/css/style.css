@@ -140,6 +140,18 @@ body{
       justify-content: flex-end;
     }
 
+    .volume i {
+      cursor: pointer;
+      font-size: 20px;
+      color: #b3b3b3;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .volume i:hover {
+      color: #fff;
+    }
+
     .volume input {
       width: 100px;
       -webkit-appearance: none;
