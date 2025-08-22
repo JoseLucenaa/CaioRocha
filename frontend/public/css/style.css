@@ -12,6 +12,7 @@
     user-select: none;
     scroll-behavior: smooth;
     transition: .5s;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -254,7 +255,7 @@ button:hover{
 #s1{
     position: relative;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     padding: 75px;
     position: relative;
     overflow: hidden;
