@@ -1,0 +1,202 @@
+/* ==============================================
+   RESPONSIVIDADE PROFISSIONAL COM DISPOSITIVOS
+   ============================================== */
+
+/* --- TIPOGRAFIA FLUIDA PARA TODOS OS DISPOSITIVOS --- */
+html {
+    font-size: clamp(12px, 1.2vw, 18px);
+}
+
+/* ==================== DESKTOP GRANDE (>=1200px) ==================== */
+/* Layout principal já definido, não há alterações necessárias para telas grandes */
+
+/* ==================== LAPTOP / DESKTOP MÉDIO (992px - 1199px) ==================== */
+@media (max-width: 1199px) {
+    /* PLAYER */
+    .player .info {
+        width: 30%;
+        gap: 10px;
+    }
+    .player img {
+        width: 50px;
+        height: 50px;
+    }
+    .details .title {
+        font-size: clamp(12px, 1vw, 14px);
+    }
+    .details .artist {
+        font-size: clamp(10px, 0.9vw, 12px);
+    }
+    .volume input {
+        width: 80px;
+    }
+
+    /* HEADER */
+    header {
+        padding: 20px 40px;
+    }
+    header .links li {
+        margin: 20px;
+        font-size: clamp(10px, 1vw, 12px);
+    }
+    header .logo img {
+        width: 130px;
+    }
+
+    /* SEÇÕES */
+    #s1, #s2, #s3, #s4 {
+        padding: 50px;
+    }
+    #s2 p {
+        font-size: clamp(16px, 1.2vw, 18px);
+    }
+    #s2 h1 {
+        font-size: clamp(30px, 3vw, 45px);
+    }
+    #s3 h1 {
+        font-size: clamp(25px, 2.5vw, 35px);
+    }
+    #s3 button {
+        width: 160px;
+        height: 45px;
+        font-size: clamp(16px, 1.5vw, 20px);
+    }
+}
+
+/* ==================== TABLET (768px - 991px) ==================== */
+@media (max-width: 991px) {
+    /* PLAYER */
+    .player {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+    .controls {
+        width: 100%;
+    }
+    .buttons {
+        gap: 15px;
+    }
+    .volume {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+    header .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header .links ul {
+        gap: 10px;
+    }
+
+    /* SEÇÕES */
+    #s1, #s2, #s3, #s4 {
+        padding: 40px;
+    }
+    #s2 .textos {
+        padding: 25px 20px;
+    }
+    #s2 p {
+        font-size: clamp(14px, 1.1vw, 16px);
+    }
+    #s2 h1 {
+        font-size: clamp(25px, 5vw, 35px);
+    }
+}
+
+/* ==================== CELULAR GRANDE / PHABLET (480px - 767px) ==================== */
+@media (max-width: 767px) {
+    /* PLAYER */
+    .player {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+    .player .info {
+        width: 100%;
+        justify-content: center;
+    }
+    .player .controls {
+        width: 100%;
+    }
+    .volume {
+        width: 100%;
+        justify-content: center;
+    }
+    .progress input[type="range"] {
+        height: 3px;
+    }
+    .buttons i {
+        font-size: 18px;
+    }
+    #playPause {
+        font-size: 25px;
+    }
+
+    /* SEÇÕES */
+    #s1, #s2, #s3, #s4 {
+        padding: 25px;
+        text-align: center;
+    }
+}
+
+/* ==================== CELULAR PEQUENO (até 479px) ==================== */
+@media (max-width: 479px) {
+    /* PLAYER */
+    .player {
+        flex-direction: column;
+        height: 20vh;
+        gap: 5px;
+        padding: 8px;
+    }
+    .player .info, .volume {
+        width: 100%;
+        justify-content: center;
+    }
+    .controls {
+        width: 100%;
+    }
+    .progress input[type="range"] {
+        height: 2px;
+    }
+    .buttons i {
+        font-size: 16px;
+    }
+    #playPause {
+        font-size: 22px;
+    }
+
+    /* HEADER */
+    header {
+        padding: 10px 10px;
+        gap: 5px;
+    }
+    header .logo img {
+        width: 120px;
+    }
+
+    /* FOOTER */
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 5px 0;
+        gap: 5px;
+    }
+    footer p {
+        font-size: clamp(10px, 2vw, 12px);
+    }
+
+    /* SEÇÕES */
+    #s1, #s2, #s3, #s4 {
+        padding: 15px;
+    }
+}
